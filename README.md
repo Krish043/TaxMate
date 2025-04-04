@@ -82,7 +82,7 @@ Ensure you have the following installed on your system:
 📸 Screenshots
 Take a look at how TaxMate appears in action:
 
-<table> <tr> <td align="center"> <strong>🏠 Homepage</strong><br> <img src="home.png" alt="Homepage" width="250"/> </td> <td align="center"> <strong>📊 Graph Insights</strong><br> <img src="graphs.png" alt="Graphs" width="250"/> </td> </tr> <tr> <td align="center"> <strong>💸 Real-Time Wallet</strong><br> <img src="real time wallet.png" alt="Wallet" width="250"/> </td> <td align="center"> <strong>🚫 Blocked Credits</strong><br> <img src="blocked credits.png" alt="Blocked Credits" width="250"/> </td> </tr> </table>
+<table width="100%"> <tr> <td align="center"> <strong>🏠 Homepage</strong><br> <img src="home.png" alt="Homepage" width="250"/> </td> <td align="center"> <strong>📊 Graph Insights</strong><br> <img src="graphs.png" alt="Graphs" width="250"/> </td> </tr> <tr> <td align="center"> <strong>💸 Real-Time Wallet</strong><br> <img src="real time wallet.png" alt="Wallet" width="250"/> </td> <td align="center"> <strong>🚫 Blocked Credits</strong><br> <img src="blocked credits.png" alt="Blocked Credits" width="250"/> </td> </tr> </table>
 These visuals highlight the TaxMate experience — from real-time tax wallet tracking to visual analytics and handling blocked credits.
 
 ## Future Enhancements  
