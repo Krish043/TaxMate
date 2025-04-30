@@ -13,7 +13,7 @@ export default function Chat() {
       setLoading(true);
 
       try {
-        const response = await axios.post(`${import.meta.env.BACKEND}/messages`, {
+        const response = await axios.post(`${process.env.NEXT_PUBLIC_BACKEND}/messages`, {
           message
         });
 

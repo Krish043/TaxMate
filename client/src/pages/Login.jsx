@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post(`${import.meta.env.BACKEND}/signin`, form)
+    axios.post(`${process.env.NEXT_PUBLIC_BACKEND}/signin`, form)
       .then(result => {
         if(result.data.message === "logged in successfully"){
           // {console.log(result);

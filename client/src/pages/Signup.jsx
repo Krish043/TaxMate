@@ -24,7 +24,7 @@ const Signup = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.post(`${import.meta.env.BACKEND}/signup`, form)
+        axios.post(`${process.env.NEXT_PUBLIC_BACKEND}/signup`, form)
         .then(result => {
             if (result.data === "User with given email already Exist!") {
                 setError(result.data);

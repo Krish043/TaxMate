@@ -11,7 +11,7 @@ const Wallet = () => {
   useEffect(() => {
     const fetchWalletData = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.BACKEND}/display`);
+        const response = await axios.get(`${process.env.NEXT_PUBLIC_BACKEND}/display`);
         if (response.data.success) {
           setWalletData(response.data.wallet);
         } else {
