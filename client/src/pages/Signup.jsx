@@ -24,7 +24,7 @@ const Signup = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        axios.post(`${process.env.NEXT_PUBLIC_BACKEND}/signup`, form)
+        axios.post(`${import.meta.env.VITE_BACKEND}/signup`, form)
         .then(result => {
             if (result.data === "User with given email already Exist!") {
                 setError(result.data);
@@ -68,6 +68,7 @@ const Signup = () => {
                     id="name"
                     name="name"
                     type="text"
+                    placeholder='client'
                     value={form.name}
                     onChange={handleChange}
                     required
@@ -86,6 +87,7 @@ const Signup = () => {
                     id="email"
                     name="email"
                     type="email"
+                    placeholder='use c@gmail.com to access all functionalities'
                     value={form.email}
                     onChange={handleChange}
                     required
@@ -111,6 +113,7 @@ const Signup = () => {
                     id="password"
                     name="password"
                     type="password"
+                    placeholder='password@123'
                     value={form.password}
                     onChange={handleChange}
                     required

@@ -51,7 +51,7 @@ const AI = () => {
 
     // Send data to backend to store in database using Axios
     try {
-      const response = await axios.post(`${import.meta.env.BACKEND}/blocked`, {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND}/blocked`, {
         CGST: totalCGST,
         SGST: totalSGST,
         IGST: totalIGST,

@@ -110,7 +110,7 @@ const Mismatch = () => {
     compareCombinedColumns();
   
     try {
-      const response = await axios.post(`${import.meta.env.BACKEND}/wallet`, {
+      const response = await axios.post(`${import.meta.env.VITE_BACKEND}/wallet`, {
         mismatchedFromAcc,
         accData: acc,
       });

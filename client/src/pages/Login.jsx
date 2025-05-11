@@ -20,7 +20,7 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post(`${process.env.NEXT_PUBLIC_BACKEND}/signin`, form)
+    axios.post(`${import.meta.env.VITE_BACKEND}/signin`, form)
       .then(result => {
         if(result.data.message === "logged in successfully"){
           // {console.log(result);
@@ -64,6 +64,7 @@ const Login = () => {
                     id="email"
                     name="email"
                     type="email"
+                    placeholder='c@gmail.com'
                     value={form.email}
                     onChange={handleChange}
                     required
@@ -89,6 +90,7 @@ const Login = () => {
                     id="password"
                     name="password"
                     type="password"
+                    placeholder='password@123'
                     value={form.password}
                     onChange={handleChange}
                     required
